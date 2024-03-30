@@ -320,6 +320,25 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
+  animation: slide-up-fade-in 1s  ease-out forwards;
+}
+
+/* anmating the whole modal show up */
+/* from to */
+/* from 0% to 100% */
+/* this is a keyframe  then we can just use it for the apps we want to use them on */
+/* key frames are reusbale that is the thing */
+
+
+@keyframes slide-up-fade-in {
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .modal h2 {
